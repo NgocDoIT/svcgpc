@@ -1,0 +1,6 @@
+{
+  "firebase_hosting": {
+    "deploymentHostingUrl": "https://svcgpc-a2e5a.web.app"
+  },
+  "cloud_run_deploy": {}
+}
