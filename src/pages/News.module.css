@@ -1,0 +1,74 @@
+/* src/pages/News.module.css */
+
+.newsPage {
+    padding: 2rem 0;
+    min-height: 100vh;
+}
+
+.newsGrid {
+    margin-top: 2rem;
+}
+
+.newsCard {
+    position: relative;
+    height: 280px; /* Increased height for better spacing */
+    border-radius: 16px !important;
+    overflow: hidden;
+    color: #fff !important;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    /* Center content vertically and horizontally */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.newsCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.cardOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Darker gradient for better text readability */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4));
+    border-radius: 16px;
+    transition: background 0.3s;
+}
+
+.newsCard:hover .cardOverlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.5));
+}
+
+.cardContent {
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem !important;
+}
+
+.cardTitle {
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.9);
+    line-height: 1.3 !important;
+    margin-bottom: 0.5rem !important; /* Space between title and subtitle */
+}
+
+.seeMore {
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px !important;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.newsCard:hover .seeMore {
+    opacity: 1;
+}
